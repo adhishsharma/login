@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 102, 138);
+    
+}
+.topbar{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(240, 111, 111);
+    color: white;
+    
+}
+.top-menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 100px;
+} 
+.top-menus #close_top_bar img{
+    height: 40px;
+    width: 60px;
+}
+.top-menus a{
+    margin: 6px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(255, 252, 252);
+   border: 2px solid white;
+   border-radius: 6px;
+
+}
+.mob_icon{
+    display: none;
+}
+
+.navbar{
+display: flex;
+justify-content:space-between ;
+align-items: center;
+padding: 20px;
+background-color: rgb(13, 102, 138);
+color: white;
+}
+.brand img{
+    width: 90px;
+    height: 50px;
+}
+
+.menus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.menus a{
+    margin: 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+   padding: 6px 10px;
+   border: 2px solid white;
+   border-radius: 6px;
+}
+.menus a:hover{
+    background-color: white;
+    color:black;
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+
+.login {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.form-group{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    font-size: x-large;
+}
+.btn_group{
+    padding: 6px;
+    margin: 10px;
+    font-size: larger;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:576px){
+    .menus{
+        display: none;
+    }
+    .mob_icon{
+        display: block;
+    }
+}
